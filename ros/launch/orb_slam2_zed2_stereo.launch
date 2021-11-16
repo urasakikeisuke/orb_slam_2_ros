@@ -2,9 +2,9 @@
   <node name="slam" pkg="orb_slam2_ros"
       type="orb_slam2_ros_stereo" output="screen">
       <!-- Camera topics to listen on -->
-      <remap from="image_left/image_color_rect" to="/camera/left/image_rect_color" />
-      <remap from="image_right/image_color_rect" to="/camera/right/image_rect_color" />
-      <remap from="image_left/camera_info" to="/camera/left/camera_info" />
+      <remap from="image_left/image_color_rect" to="/zed2/zed_node/left/image_rect_color" />
+      <remap from="image_right/image_color_rect" to="/zed2/zed_node/right/image_rect_color" />
+      <remap from="image_left/camera_info" to="/zed2/zed_node/left/camera_info" />
 
       <!-- Settings -->
       <param name="publish_pointcloud" type="bool" value="true" />
